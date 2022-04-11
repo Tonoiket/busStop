@@ -255,23 +255,23 @@ public class busSystem {
              String [] sp =line.split(",");
              stop st=new stop(sp);
              String name=sp[2];
-             if(name.startsWith("FLAGSTOP")) {
-            	 String change =name.replace("FLAGSTOP","");
+             if(name.startsWith("FLAGSTOP ")) {
+            	 String change =name.replace("FLAGSTOP ","");
             	 name=change+"FLAGSTOP";
              }
-             else if(name.startsWith("WB")) {
-            	 String change =name.replace("WB","");
+             else if(name.startsWith("WB ")) {
+            	 String change =name.replace("WB ","");
             	 name=change+"WB";
              }
              else if(name.startsWith("NB")) {
-            	 String change=name.replace("NB","");
+            	 String change=name.replace("NB ","");
             	 name=change+"NB";
              }
-             else if(name.startsWith("SB")) {
-            	 String change=name.replace("SB","");
+             else if(name.startsWith("SB ")) {
+            	 String change=name.replace("SB ","");
             	 name=change+"SB";
              }
-             else if(name.startsWith("EB")) {
+             else if(name.startsWith("EB　")) {
             	 String change=name.replace("EB","");
             	 name=change+"EB";
              }
